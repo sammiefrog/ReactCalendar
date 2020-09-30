@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Components/Header';
+import AppBar from './Components/AppBar';
+import Main from './Pages/Main';
 
 export const App = () => {
   const [time, setTime] = useState(null);
@@ -23,7 +24,8 @@ export const App = () => {
 
   return (
     <div className='App'>
-      <Header />
+      <AppBar />
+      <Main />
       {!error ? (
         <p className='pt-2 text-center text-success'>
           {!time ? 'Loading...' : `Server time: ${time}`}

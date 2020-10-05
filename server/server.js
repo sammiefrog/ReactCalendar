@@ -5,6 +5,7 @@ const path = require('path');
 const api = require('./routes/api');
 const app = express();
 const passport = require("passport");
+const mongoose = require('mongoose');
 
 
 // Middleware:
